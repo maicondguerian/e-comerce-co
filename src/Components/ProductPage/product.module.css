@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap");
+
+:root {
+  --font: "Poppins", sans-serif;
+  --bg-soft-white: hsl(223, 64%, 98%);
+  --primary-color: #6085f7;
+  --primary-overlay: rgba(0, 0, 0, 0.5);
+  --warning-color: #f86666;
+  --orange-bg: hsl(26, 100%, 55%);
+  --padding-f0: 1.5rem;
+  --orange: hsl(25, 97%, 53%);
+  --fs-p2: 2.4rem;
+  --fs-p6: 3.8rem;
+  --fs-p1: 1.3rem;
+  --fs-p0: 1rem;
+  --fs-p5: 0.7rem;
+  --fs-p00: 1.5rem;
+  --font-family: "Overpass", sans-serif;
+  --text400: 400;
+  --text700: 700;
+  --light-grayish-blue: hsl(223, 64%, 98%);
+  --dark-grayish-blue: hsl(219, 9%, 45%);
+  --Grayish-blue: hsl(220, 14%, 75%);
+}
+
+.container {
+  margin-top: var(--fs-p6);
+  width: 100%;
+}
+
+.navWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navWrapper > ul > li > img {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 0;
+  border-radius: 50%;
+  border: solid 2px transparent;
+  cursor: pointer;
+}
+
+.navWrapper > ul > li > img:hover {
+  border: solid 2px var(--orange-bg);
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.leftNavBar svg {
+  font-size: 20px;
+}
+
+.badgeWrapper {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.cartBadge {
+  position: absolute;
+  top: -14px;
+  right: -15px;
+  width: 15px;
+  height: 15px;
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(26, 100%, 55%);
+  color: var(--primary-contrast);
+  font-family: var(--font);
+  color: var(--bg-soft-white);
+  font-size: 14px;
+}
+
+ul {
+  position: relative;
+  display: flex;
+}
+
+.container li {
+  display: inline-block;
+  margin: 20px;
+  border: solid 2px;
+  border: transparent;
+  cursor: pointer;
+}
+
+/* .container li:hover {
+  border-bottom: 2px solid var(--orange-bg);
+  margin-top: 1rem;
+} */
+
+hr {
+  width: 1180px;
+  height: 1px;
+  opacity: 0.5;
+  background: var(--Grayish-blue);
+  font-size: 0;
+  border: none;
+}
+
+.hr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
